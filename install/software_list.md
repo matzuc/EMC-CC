@@ -1,0 +1,3 @@
+- Panoply
+- Python 3.x
+- vscode

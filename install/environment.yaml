@@ -1,0 +1,14 @@
+name: lab_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - xarray
+  - netcdf4
+  - matplotlib
+  - jupyter
+  - rasterio
+  - cartopy
+  - geopandas
+  - shapely
+  - fiona
