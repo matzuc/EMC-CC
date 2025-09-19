@@ -3,12 +3,37 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
-  - xarray
+  # Core scientific stack
+  - numpy
+  - pandas
+  - xarray>=2024.7.0
+  - dask
+  - bottleneck
+  - scipy
+  # NetCDF/HDF5 stack (evita conflitti su macOS)
   - netcdf4
+  - h5netcdf
+  - h5py
+  - cftime
+  - libnetcdf
+  - hdf5
+  # Viz & notebook
   - matplotlib
   - jupyter
+  # Geo stack
   - rasterio
+  - rioxarray
   - cartopy
   - geopandas
   - shapely
   - fiona
+  - pyproj
+  # Copernicus Marine (ex-CMEMS) toolbox
+  - copernicusmarine
+  # Copernicus Climate Data Store (C3S)
+  - cdsapi
+  # (opzionale) leggere ERA5 in GRIB via xarray
+  - eccodes
+  - cfgrib
+  # utilità
+  - tqdm
